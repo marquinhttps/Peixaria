@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: #099;
-    color: white;
+    background-color: #E0DFD5;
+    color: black;
     padding: 20px;
     text-align: center;
     font-size: 24px;
@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    background-color: #1E5050;
+    background-color: #313638;
     padding: 10px 0;
 }
 
@@ -73,7 +73,7 @@ td {
 }
 
 th {
-    background-color: #099;
+    background-color: #313638;
     color: white;
 }
 
@@ -87,7 +87,7 @@ th {
 
 .form-section h3 {
     margin-top: 0;
-    color: #099;
+    color: black;
 }
 
 .form-section label {
@@ -107,7 +107,7 @@ th {
 }
 
 .form-section button {
-    background-color: #099;
+    background-color: #313638;
     color: white;
     border: none;
     cursor: pointer;
@@ -120,7 +120,7 @@ th {
 }
 
 button {
-    background-color: #099;
+    background-color: #313638;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -143,26 +143,26 @@ footer {
 
 /*dashboard*/
 
-.dashboard-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
 
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
 
-.card h3 {
-    margin: 10px 0;
-    color: #099;
-}
+        .card h3 {
+            margin: 10px 0;
+            color: #313638;
+        }
 
-.card p {
-    margin: 0;
-    font-size: 18px;
-}
+        .card p {
+            margin: 0;
+            font-size: 18px;
+        }
