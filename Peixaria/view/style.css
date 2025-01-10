@@ -17,8 +17,19 @@ header {
 }
 
 nav {
-    background-color: #313638;
-    padding: 10px 0;
+    background-color: #313638; /* Mantém a cor */
+    padding: 15px 20px; /* Aumenta o espaçamento */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    display: flex;
+    justify-content: space-between; /* Espaça logo e itens da barra */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+nav .logo {
+    font-size: 24px; /* Tamanho da logo */
+    font-weight: bold;
+    color: white; /* Cor do texto/logo */
+    text-decoration: none;
 }
 
 nav ul {
@@ -26,22 +37,23 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Mantém a cor do texto */
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s, transform 0.3s; /* Transição suave */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #3CF; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom */
 }
+
 
 .container {
     padding: 20px;
@@ -166,3 +178,39 @@ footer {
             margin: 0;
             font-size: 18px;
         }
+
+        /* Estilo base do dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0; /* Remove espaço extra */
+    margin: 0; /* Remove margens */
+}
+
+.dropdown-content li {
+    list-style: none; /* Remove os marcadores */
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse sobre o link */
+}
+
+/* Exibe o menu ao passar o mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
