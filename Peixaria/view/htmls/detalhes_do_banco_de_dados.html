@@ -1,0 +1,57 @@
+<!-- 
+create database peixaria;
+use peixaria;
+
+#--------------------------------------------------- VIEW --------------------------------------------
+
+DELIMITER $
+create view receitaBruta as
+SELECT 
+    SUM(p.preco * v.quantidade) as valor,
+    YEAR(v.data) as ano,
+    MONTH(v.data) as mes
+FROM vendas v
+INNER JOIN produtos p ON p.id = v.idProduto
+GROUP BY YEAR(v.data), MONTH(v.data)
+order by  YEAR(v.data) desc, MONTH(v.data) desc;
+$ DELIMITER ;
+
+DELIMITER $
+create view folhaDePagamento as
+select sum(f.salario) as valor, YEAR(f.updatedAt) as ano, MONTH(f.updatedAt) as mes
+from funcionarios f
+GROUP BY YEAR(f.updatedAt), MONTH(f.updatedAt);
+$ DELIMITER ;
+
+
+#--------------------------------------------------- TRIGGER --------------------------------------------
+
+create table bkp_vendas(
+id integer(12) not null auto_increment primary key,
+idVenda integer(12),
+idProduto integer(12),
+idCliente integer(12),
+quantidade integer(12),
+data date,
+createdAt datetime,
+updatedAt datetime
+);
+
+DELIMITER $$
+CREATE TRIGGER backupVendas
+BEFORE delete ON vendas 
+FOR EACH ROW
+BEGIN
+    insert into bkp_vendas( idVenda, idProduto, idCliente, quantidade, data, createdAt, updatedAt)
+    values(old.id, old.idProduto, old.idCliente, old.quantidade, old.data, old.createdAt, old.updatedAt);
+END $$
+DELIMITER ; 
+
+
+#--------------------------------------------------- PROCEDURES --------------------------------------------
+
+DELIMITER $$
+create procedure getUmFornecedor(id_parametro integer(25)) 
+select f.* from fornecedores f where f.id = id_parametro;
+$$ DELIMITER ;
+-->

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Peixes Wave</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="css/peixe.css">
+    <style>
+      /* Adicione aqui estilos personalizados para a loja de peixes, se necessário */
+      .tm-special-item img {
+        object-fit: cover;
+        object-position: center;
+        height: 200px; /* Garante que as imagens têm a mesma altura */
+      }
+      .tm-site-header {
+        height: 120px;
+      }
+      .tm-site-logo {
+        margin-right: 15px;
+      }
+      .tm-site-name {
+        font-size: 2rem;
+      }
+    </style>
+</head>
+<body>
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <i href="../htmls/deashboard.html" class="fas fa-fish fa-3x tm-site-logo"></i>
+            <h1 href="../htmls/deashboard.html" class="tm-site-name">Loja de Peixes</h1>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#peixes" class="tm-page-link active">
+                  <i class="fas fa-fish-fins tm-page-link-icon"></i>
+                  <span>Peixes</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#sobre" class="tm-page-link">
+                  <i class="fas fa-store tm-page-link-icon"></i>
+                  <span>Sobre Nós</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#ofertas" class="tm-page-link">
+                  <i class="fas fa-percent tm-page-link-icon"></i>
+                  <span>Promoções</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contato" class="tm-page-link">
+                  <i class="fas fa-envelope tm-page-link-icon"></i>
+                  <span>Contato</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="peixes" class="tm-page-content">
+            <!-- Peixes Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="agua-salgada">Água Salgada</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="agua-doce">Água Doce</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="frutos-do-mar">Frutos do Mar</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="outros">Outros</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="agua-salgada" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/Salmao.jpeg" alt="Salmão" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Salmão<span class="tm-list-item-price">R$49.90/kg</span></h3>
+                    <p class="tm-list-item-description">Salmão fresco, perfeito para grelhar ou assar.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/atum.jpg" alt="Atum" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Atum<span class="tm-list-item-price">R$39.90/kg</span></h3>
+                    <p class="tm-list-item-description">Atum fresco, ideal para sushis e sashimis.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/badejo.jpeg" alt="Badejo" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Badejo<span class="tm-list-item-price">R$34.90/kg</span></h3>
+                    <p class="tm-list-item-description">Badejo saboroso, ótimo para moquecas e ensopados.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/sardinha.jpeg" alt="Sardinha" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Sardinha<span class="tm-list-item-price">R$15.90/kg</span></h3>
+                    <p class="tm-list-item-description">Sardinha fresca, rica em ômega-3, ideal para fritar.</p>
+                  </div>
+                </div>                                       
+              </div>
+            </div> 
+
+            <div id="agua-doce" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  <img src="img/tilapia.jpeg" alt="Tilápia" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Tilápia<span class="tm-list-item-price">R$22.90/kg</span></h3>
+                    <p class="tm-list-item-description">Tilápia fresca, versátil para diversas preparações.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/tambaqui.jpg" alt="Tambaqui" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Tambaqui<span class="tm-list-item-price">R$24.90/kg</span></h3>
+                    <p class="tm-list-item-description">Tambaqui inteiro, perfeito para assar na brasa.</p>                    
+                  </div>
+                </div>
+                 <div class="tm-list-item">          
+                  <img src="img/pacu.jpeg" alt="Pacu" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pacu<span class="tm-list-item-price">R$20.90/kg</span></h3>
+                     <p class="tm-list-item-description">Pacu fresco, ótimo para grelhar e assar.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                    <img src="img/truta.jpeg" alt="Truta" class="tm-list-item-img">
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">Truta<span class="tm-list-item-price">R$32.90/kg</span></h3>
+                       <p class="tm-list-item-description">Truta fresca, delicada e saborosa, ideal para fritar.</p>
+                     </div>
+                  </div>
+              </div>
+            </div>
+
+            <div id="frutos-do-mar" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/camarão.jpeg" alt="Camarão" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Camarão<span class="tm-list-item-price">R$55.00/kg</span></h3>
+                    <p class="tm-list-item-description">Camarão fresco, ideal para diversas preparações.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/lula.jpeg" alt="Lula" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Lula<span class="tm-list-item-price">R$45.00/kg</span></h3>
+                    <p class="tm-list-item-description">Lula fresca, ótima para anéis à dorê ou recheada.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/polvo.jpeg" alt="Polvo" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Polvo<span class="tm-list-item-price">R$65.00/kg</span></h3>
+                    <p class="tm-list-item-description">Polvo fresco, excelente para saladas e pratos especiais.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/marisco.jpeg" alt="Marisco" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Marisco<span class="tm-list-item-price">R$35.00/kg</span></h3>
+                    <p class="tm-list-item-description">Marisco fresco, saboroso para ensopados e risotos.</p>              
+                  </div>
+                </div>              
+              </div>
+            </div>
+            <div id="outros" class="tm-tab-content">
+                <div class="tm-list">
+                  <div class="tm-list-item">          
+                    <img src="img/ovas.jpeg" alt="Ovas" class="tm-list-item-img">
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">Ovas de Peixe<span class="tm-list-item-price">R$80.00/kg</span></h3>
+                      <p class="tm-list-item-description">Ovas frescas, para preparações mais sofisticadas.</p>              
+                    </div>
+                  </div>
+                  <div class="tm-list-item">          
+                    <img src="img/escargot.jpg" alt="Moluscos" class="tm-list-item-img">
+                    <div class="tm-black-bg tm-list-item-text">
+                      <h3 class="tm-list-item-name">Moluscos Variados<span class="tm-list-item-price">R$40.00/kg</span></h3>
+                      <p class="tm-list-item-description">Mix de moluscos frescos, para diversas receitas.</p>                    
+                    </div>
+                  </div>
+                    <div class="tm-list-item">          
+                      <img src="img/carangueijo.jpeg" alt="Caranguejo" class="tm-list-item-img">
+                      <div class="tm-black-bg tm-list-item-text">
+                        <h3 class="tm-list-item-name">Caranguejo<span class="tm-list-item-price">R$60.00/kg</span></h3>
+                        <p class="tm-list-item-description">Caranguejo fresco, para caldeiradas e pratos saborosos.</p>              
+                      </div>
+                  </div>
+                  <div class="tm-list-item">          
+                      <img src="img/curtido.jpeg" alt="Peixe Curtido" class="tm-list-item-img">
+                      <div class="tm-black-bg tm-list-item-text">
+                        <h3 class="tm-list-item-name">Peixe Curtido<span class="tm-list-item-price">R$30.00/kg</span></h3>
+                        <p class="tm-list-item-description">Peixes curtidos em sal, para petiscos e acompanhamentos.</p>
+                      </div>
+                    </div>              
+                </div>
+              </div>
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="sobre" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">Sobre a Loja de Peixes Wave</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/peixes.jpeg" alt="Loja 1" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>A Loja de Peixes Wave é sua melhor opção em peixes frescos e frutos do mar na região.</p>
+                  <p>Trabalhamos com fornecedores de confiança para garantir a qualidade e a procedência de nossos produtos.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">Nossa Missão</h2>
+                  <p>Oferecer peixes e frutos do mar frescos e de alta qualidade, sempre buscando a satisfação de nossos clientes.</p>                  
+                </div>                
+                <img src="img/frutos do mar.jpeg" alt="Loja 2" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+               <p>Estamos sempre prontos para atender suas necessidades com rapidez e eficiência. Visite-nos e confira a variedade de nossos produtos!</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="ofertas" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/camarãocombo.jpeg" alt="Oferta 1">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Combo Família</h2>
+                  <p class="tm-special-item-text">Compre 2kg de peixe e ganhe 500g de camarão!</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/Peixedasemana.jpeg" alt="Oferta 2">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Peixe da Semana</h2>
+                  <p class="tm-special-item-text">Todo fim de semana, um peixe selecionado com 15% de desconto.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/lulafreca.jpeg" alt="Oferta 3">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Super Combo</h2>
+                  <p class="tm-special-item-text">Na compra de 1kg de lula, ganhe um pacote de tempero especial.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/promoçao.jpg" alt="Oferta 4">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Promoção do Dia</h2>
+                  <p class="tm-special-item-text">Confira as promoções do dia em nossa loja e aproveite os melhores preços.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/combo peixe.jpeg" alt="Oferta 5">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Combo do Chef</h2>
+                  <p class="tm-special-item-text">Experimente nossos combos especiais para chefs e restaurantes com preços imperdíveis.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/delivery.jpeg" alt="Oferta 6">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Entrega Rápida</h2>
+                  <p class="tm-special-item-text">Entrega rápida para toda região. Consulte as condições.</p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contato" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Entre em Contato</h2>
+              <p>Estamos prontos para atender suas necessidades. Entre em contato conosco através do formulário abaixo ou ligue para nosso telefone.</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Nome" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Mensagem" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+        </main>
+      </div>    
+    </div>
+    <footer class="tm-site-footer">
+      <p class="tm-black-bg tm-footer-text">Peixaria
+    </footer>
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+</body>
+</html>

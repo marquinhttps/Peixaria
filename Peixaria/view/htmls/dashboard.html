@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+   
+</head>
+
+<body>
+
+    <header>
+        Dashboard
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="fornecedores.html">Fornecedores</a></li>
+            <li><a href="funcionarios.html">Funcionários</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="vendas.html">Vendas</a></li>
+            <li><a href="demonstracao_resultados.html">Controle Financeiro</a></li>
+            <li><a href="../pagina_inicial/index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Resumo do Sistema</h2>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Total de Clientes</h3>
+                <p id="cliente"></p>
+            </div>
+            <div class="card">
+                <h3>Produtos em Estoque</h3>
+                <p id="produto"></p>
+            </div>
+            <div class="card">
+                <h3>Vendas Realizadas</h3>
+                <p id="venda"></p>
+            </div>
+            <div class="card">
+                <h3>Receita Mensal aproximada</h3>
+                <p id="receita"></p>
+            </div>
+            <div class="card">
+                <h3>Fornecedores Ativos</h3>
+                <p id="fornecedor"></p>
+            </div>
+            <div class="card">
+                <h3>Funcionários</h3>
+                <p id="funcionario"></p>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+<script src="../manipula_dados/manipula_dados_deashboard.mjs" type="module"></script>
+
+</html>

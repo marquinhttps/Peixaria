@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios Financeiros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #099;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #1E5050;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #099;
+            color: white;
+        }
+
+        .form-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-section h3 {
+            margin-top: 0;
+            color: #099;
+        }
+
+        .form-section label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form-section input, .form-section select, .form-section button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-section button {
+            background-color: #099;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #3CF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            background-color: #099;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #3CF;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1E5050;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Relatórios Financeiros
+
+</header>
+<nav>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="compras.html">Compras</a></li>
+            <li><a href="fornecedores.html">Fornecedores</a></li>
+            <li><a href="funcionarios.html">Funcionários</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="vendas.html">Vendas</a></li>
+            <li><a href="demonstracao_resultados.html">Controle Financeiro</a></li>
+            <li><a href="../pagina_inicial/index.html">Página Inicial</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Controle finaneiro</h2>
+
+    <div class="report-table">
+        <h3>Demonstração de Resultados</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Receita Bruta</th>
+                    <th>Folha de Pagamento</th>
+                    <th>Despesas com Manutenção</th>
+                    <th>Despesas com Matéria Prima</th>
+                    <th>Receita Liquída</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="tbody1">
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+</body>
+<script src="../manipula_dados/manipula_dados_demonstracao_resultados.mjs" type="module"></script>
+</html>
+
